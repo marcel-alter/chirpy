@@ -1,0 +1,10 @@
+get http://localhost:8080/app
+
+###
+
+post http://localhost:8080/api/validate_chirp 
+Content-Type: application/json
+
+{
+  "message": "I had something interesting for breakfast"
+}
