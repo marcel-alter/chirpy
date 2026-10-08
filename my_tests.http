@@ -1,0 +1,28 @@
+get http://localhost:8080/app
+
+###
+
+post http://localhost:8080/api/chirps
+Content-Type: application/json
+
+{
+  "body": "I had something interesting for breakfast",
+  "user_id": "f511663c-2d5c-4a7c-9fae-369675130d6a"
+} 
+
+###
+
+post http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "email": "mloneusk@example.co"
+}
+
+###
+
+get http://localhost:8080/api/chirps
+
+###
+
+get http://localhost:8080/api/chirps/8a8a4b21-6c58-44a6-b0f7-594730ca6aa6
